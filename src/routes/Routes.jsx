@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 
 
-
+import Home from "../pages/Home";
 // import * as Config from "../constants/Config";
 import SignUp from "../pages/signup";
 

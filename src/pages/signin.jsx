@@ -51,7 +51,7 @@ const SignIn = () => {
 
     useEffect(() => {
         if (localStorage.getItem("token")) {
-            history.push("/content");
+            history.push("/login");
           }
           setLocData(JSON.parse(localStorage.getItem("loc")));
         // appMenus();

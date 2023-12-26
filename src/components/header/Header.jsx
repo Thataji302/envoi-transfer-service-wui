@@ -96,7 +96,7 @@ const Header = (props) => {
 
     <header id="header" className={scroll ? "fixed-top header-scrolled" : "fixed-top"}>
       <div className="container d-flex align-items-center justify-content-between">
-        <h1 className="logo"><a href="/"><img src="https://orasi-dev.imgix.net/orasi/client/resources/orasiv1/images//logoupdated.png" /></a></h1>
+        <h1 className="logo"><a href="/"><img src="https://envoi-common-resources.imgix.net/Envoi/submission/images/landingpagelogo.png" /></a></h1>
         <nav id="navbar" className={toggle ? "navbar navbar-mobile" : "navbar"}>
           {/* <ul>
             <li onClick={handleHome}><a className="nav-link active">Home</a></li>
