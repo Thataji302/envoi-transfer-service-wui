@@ -282,7 +282,7 @@ function GeneratePassword() {
              let currentDate = new Date().toJSON();
              window.localStorage.setItem("currentSessionClientTime",currentDate); 
              setWelcomeMsg(true)
-             history.push("/content")
+             history.push("/")
            }
            setBtnLoader(false)
         } catch {
@@ -301,7 +301,7 @@ function GeneratePassword() {
             <button className="close-btn" onClick={handleClose}><span className="material-icons">close</span></button>
             <div className="signin-wrapper create-password">
                 <a href="/">
-                    <img src={"https://orasi-dev.imgix.net/orasi/client/resources/orasiv1/images//logoupdated.png?auto=compress,format"} className="logo" /></a>
+                    <img src={"https://envoi-common-resources.imgix.net/Envoi/submission/images/landingpagelogo.png?auto=compress,format"} className="logo" /></a>
                 {/* <h1 className="bold-heading bold-title">welcome back !</h1> */}
                 <p className="strong">Create strong and secure passwords to keep your account safe</p>
                 <span className="material-icons-outlined secure-icon">lock_person</span>
