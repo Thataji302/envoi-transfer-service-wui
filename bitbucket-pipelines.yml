@@ -5,7 +5,7 @@ pipelines:
     deploy:
       - step:
           name: Build
-          image: node:20:11:0
+          image: node/20:11:0
           caches:
             - node
           script:
