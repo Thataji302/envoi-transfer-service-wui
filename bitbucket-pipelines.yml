@@ -1,0 +1,27 @@
+image: atlassian/default-image:4
+
+pipelines:
+  custom:
+    deploy:
+      - step:
+          name: Build
+          image: node:20:11:0
+          caches:
+            - node
+          script:
+            - npm install
+            - npm run build
+          artifacts:
+            - build/**
+      - step:
+          oidc: true
+          name: Deploy 
+          trigger: manual
+          script:
+            - pipe: atlassian/aws-s3-deploy:1.6.0
+              variables:
+                ACL: public-read
+                LOCAL_PATH: "build"
+            - pipe: atlassian/aws-cloudfront-invalidate:0.10.0
+              variables:
+                DISTRIBUTION_ID: $CLOUDFRONT_DISTRIBUTION_ID
