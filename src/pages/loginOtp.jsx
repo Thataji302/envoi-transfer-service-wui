@@ -226,11 +226,11 @@ const SignInOtp = () => {
       <button className="close-btn" onClick={handleClose}><span className="material-icons">close</span></button>
       <div className="signin-wrapper">
         <a href="/">
-          <img src={"https://orasi-dev.imgix.net/orasi/client/resources/orasiv1/images//logoupdated.png?auto=compress,format"} className="logo" /></a>
+          <img src={"https://envoi-common-resources.imgix.net/Envoi/submission/images/landingpagelogo.png?auto=compress,format"} className="logo" /></a>
         <div className="signin-body">
           <div className="signin-graphic">
-            <h2>Welcome to<br />Digital Content Rights<br />Marketplace</h2>
-            <img src={img + Config.imgmiddle + "signin-graphic.png?auto=compress,format&width=" + cardWidth} />
+            <h2>Welcome to<br />Envoi File Upload<br /></h2>
+            <img src={"https://envoi-common-resources.imgix.net/envoi-upload/images/signin-graphic.png?auto=compress,format&width=320"} />
           </div>
 
           <div className="signin-section emaillogin ">

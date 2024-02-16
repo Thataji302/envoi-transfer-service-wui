@@ -4,7 +4,7 @@ let { appname } = window.app;
 const tmdbApi = {
   
   websitedefaults: (params) => {
-    const url = "/config?" + 'appname=' + appname;
+    const url = "/websiteDefaults?" + 'appname=' + appname;
     return axiosClient.get(url, params);
   },
 
@@ -45,12 +45,12 @@ const tmdbApi = {
   },
 
   signin: (params) => {
-    const url = "/signin?appname=" + appname;
+    const url = "/signIn?appname=" + appname;
     return axiosClient.post(url, params);
   },
 
   signOtp: (params) => {
-    const url = "/signin?appname=" + appname+"&type=signin" ;
+    const url = "/signIn?appname=" + appname+"&type=signin" ;
     return axiosClient.post(url, params);
   },
 
@@ -275,8 +275,8 @@ const tmdbApi = {
   },
 
   getLookUp: (params) => {
-    const url = "/lookups?appname=" + appname;
-    return axiosClient.post(url, params);
+    let lookupUrl = "https://w5gkasqpv3.execute-api.us-east-1.amazonaws.com/latest/countries?appname=" + appname;
+    return axiosClient.get(lookupUrl, params);
   },
 
   deleteWishlist: (params) => {
