@@ -1,6 +1,6 @@
 {
-  "name": "orasi-media",
-  "version": "0.1.0",
+  "name": "envoi-transfer-service-wui",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@cyntler/react-doc-viewer": "^1.13.0",
