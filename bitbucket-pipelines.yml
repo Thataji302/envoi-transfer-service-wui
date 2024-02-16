@@ -10,7 +10,7 @@ pipelines:
             - node
           script:
             - yarn install
-            - yarn run build
+            - CI=false yarn run build
           artifacts:
             - build/**
       - step:
