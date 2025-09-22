@@ -1,0 +1,26 @@
+.upload_landing .upload_block {display: flex; align-items: center; justify-content: center; flex-direction: column;}
+.upload_landing .upload_block .video_file{width: 136px; height: 136px; border-radius: 100%; background-color: #3a3c40; border: 1px solid #606162; display: flex; align-items: center; justify-content: center;}
+.upload_landing .upload_block .video_file input[type="file"] {opacity: 0; overflow: hidden; position: absolute; border-radius: 100%; cursor: pointer; width: 136px; height: 136px;}
+.upload_landing .upload_block .video_file span{color: #898989; font-size: 60px;}
+.upload_landing .upload_block h6 {font-size: 17px; line-height: 22px; margin-top: 23px; color: #fff;}
+.upload_landing .upload_block p{font-weight: 400; font-size: 13px; margin-top: 8px; margin-bottom: 37px;}
+.upload_landing .upload_block .btn{cursor: pointer; width: auto; border-radius: 5px; background-color: #006f99; border: 1px solid #006f99; position: relative; padding: 10px 20px; text-transform: uppercase; font-size: 13px; line-height: 17px; color: #fff; height: auto;}
+.upload_landing .upload_block .btn input[type="file"] {opacity: 0; overflow: hidden; position: absolute; border-radius: 100%; cursor: pointer; width: 100%; height: 37.1px; top: 0; left: 0;}
+.upload_landing .join_row  {max-width: 600px;}
+.upload_landing .cols {      width: 100%; padding: 40px; background-color: #15171b; border-radius: 5px; border: 2px dashed #30343c;}
+.upload_landing .footer-container { display: flex; align-items: center; justify-content: space-between;}
+.upload_landing .footer-container ul { margin: 0; display: flex; align-items: center; padding: 0; margin-right: 40px;}
+.upload_landing .footer-container ul li { list-style: none; line-height: 1; display: flex; align-items: center;}
+.upload_landing .footer-container ul li a { color: #fff !important; font-size: 12px; padding: 8px; line-height: 1; font-size: 12px; transition: all 0.2s ease-out;}
+.upload_landing .footer {position: absolute; bottom: 0px; width: 100%; bottom: 0; padding: 15px; border-top: 1px solid #3a3a3a; background-color: #111215; z-index: 2;}
+.upload_landing header form {flex-direction: row;}
+.upload_landing header .bg-light {background-color: #15171b !important;}
+.upload_landing header .btn {background-color: #006f99; color: #fff; font-weight: normal; text-transform: uppercase; margin-bottom: 0px !important; padding: 5px 20px !important; font-size: 13.5px !important;  border: 1px solid #006f99; height: auto; margin-left: 10px;}
+.upload_landing header .btn:focus {outline: none; border: none; box-shadow: none;}
+.upload_landing {  background-repeat: repeat; background-position: bottom center; height: 100vh;}
+.upload_landing header {padding: 5px 0; position: fixed; width: 100%; top: 0; background-color: #15171b; z-index: 999;}
+.upload_landing .nav-link { color: #fff !important; font-size: 14px; font-weight: 600; margin: 0 5px;}
+.upload_landing .nav-link:hover {  color: #006f99 !important;}
+.upload_landing::after {     content: ""; position: absolute; bottom: 0; width: 100%; height: 100vh; background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6896008403361344) 27%, rgba(0,0,0,0.9753151260504201) 47%, rgba(0,0,0,1) 100%);}
+.upload_landing .footer-para { margin-bottom: 0; text-align: center; color: #9b9b9b; font-size: 13px; }
